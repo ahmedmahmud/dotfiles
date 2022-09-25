@@ -1,0 +1,56 @@
+* {
+  /* Bar measurement icons: https://github.com/and3rson/graph-bars-font */
+  /* Icon set: https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started */
+  font-family: 'PixelMplus12', 'FiraCode NF';
+  font-size: 14px;
+  font-weight: 100;
+  font-smooth: 'never';
+  -webkit-font-smoothing : none;
+  text-rendering: "geometricPrecision";
+  color: #d8dee9;
+}
+
+.bar {
+  padding: 0 5px;
+  margin-top: 12px;
+}
+
+.komorebi-workspaces {
+  margin-left: 60px;
+}
+
+.ws-btn {
+  height: 25px;
+  width: 25px;
+  background: #3b4252;
+  margin: 1px 5px;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  border: none;
+}
+
+.ws-btn:hover {
+    font-weight: bold;
+}
+
+.ws-btn.populated {
+    border: 1px solid #88c0d0;
+}
+
+.ws-btn.active {
+  background-color: #88c0d0;
+  color: #eceff4;
+}
+
+.active-window-widget {
+  margin-left: 5px;
+}
+
+.active-window-widget .label {
+  padding: -5px 7px 0 7px;
+  margin-bottom: -1px;
+  margin: 2px;
+  background: #3b4252;
+  text-align: "center";
+}

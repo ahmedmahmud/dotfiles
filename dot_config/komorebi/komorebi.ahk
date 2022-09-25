@@ -8,27 +8,25 @@
 
 ; Quit komorebi & yasb when quitting autohotkey
 OnExit("komorebic_stop")
-komorebic_stop()
-{
+komorebic_stop() {
     Run, komorebic.exe stop, , Hide
     Run, taskkill.exe /f /im pythonw.exe, , Hide
     return
 }
 
-
 ; Generic Behaviour
 ; Default to minimizing windows when switching workspaces
-WindowHidingBehaviour("minimize")
+;WindowHidingBehaviour("minimize")
+
 ; Set cross-monitor move behaviour to insert instead of swap
-CrossMonitorMoveBehaviour("insert")
+;CrossMonitorMoveBehaviour("insert")
+
 ; Configure the invisible border dimensions
-InvisibleBorders(7, 0, 14, 7)
-; Change mouse focus settings
-; ToggleMouseFollowsFocus()
-; ToggleFocusFollowsMouse("windows")
+; InvisibleBorders(7, 0, 14, 7)
+
 ; Window border
-ActiveWindowBorder("enable")
-ActiveWindowBorderColour(143, 188, 187, "single")
+; ActiveWindowBorder("enable")
+; ActiveWindowBorderColour(143, 188, 187, "single")
 
 ; Ensure workspaces are created
 EnsureWorkspaces(0, 9)
@@ -37,35 +35,8 @@ EnsureWorkspaces(1, 9)
 RunWait, pwsh.exe "%A_ScriptDir%\komorebi-ws.ps1", , Hide
 
 ; Custom Window Rules
-; iCUE Rule
-IdentifyTrayApplication("exe", "iCUE.exe")
-IdentifyBorderOverflowApplication("exe", "iCUE.exe")
-
-; Authy Rule
-FloatRule("exe", "Authy Desktop.exe")
-
-; Hyper-V Rule
-FloatRule("exe", "vmconnect.exe")
-
-; Path of Building Community Rule
-FloatRule("class", "SimpleGraphic Console Class")
-
 ; Steam Rule
-FloatRule("exe", "steamwebhelper.exe")
-
-; Overwolf Rules
-ManageRule("title", "CurseForge")
-IdentifyTrayApplication("exe", "Overwolf.exe")
-IdentifyBorderOverflowApplication("exe", "Overwolf.exe")
-
-; f.lux Rules
-FloatRule("exe", "flux.exe")
-IdentifyTrayApplication("exe", "flux.exe")
-
-; LoR Master Tracker Rules
-FloatRule("exe", "LoRMasterTracker.exe")
-IdentifyTrayApplication("exe", "LoRMasterTracker.exe")
-IdentifyBorderOverflowApplication("exe", "LoRMasterTracker.exe")
+; FloatRule("exe", "steam.exe")
 
 ; Workspace Rules
 WorkspaceRule("exe", "WhatsApp.exe", 0, 7)
@@ -77,7 +48,6 @@ CompleteConfiguration()
 
 ; Start yasb
 Run, pythonw "C:\Users\ahmed\AppData\Local\Programs\yasb\src\main.py", , Hide
-
 
 ; Keybinds
 ; Change the focused window, Alt + Vim direction keys (HJKL)
@@ -195,12 +165,12 @@ return
 
 ; Open Windows Terminal as normal user
 !t::
-Run, explorer.exe C:\Users\Ozoku\AppData\Local\Microsoft\WindowsApps\wt.exe
+Run, explorer.exe C:\Users\ahmed\AppData\Local\Microsoft\WindowsApps\wt.exe
 return
 
-; Open Brave
+; Open Browser
 !b::
-Run, explorer.exe C:\Users\Ozoku\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe
+Run, explorer.exe C:\Program Files\Mozilla Firefox\firefox.exe
 return
 
 ; Minimize Window

@@ -1,0 +1,67 @@
+/**
+ * @name Dark Matter
+ * @author Tropical#8908, Hammock#3110
+ * @version 3.0.0
+ * @description A cold, dark & frosty theme.
+ * @source https://github.com/DiscordStyles/DarkMatter/
+*/
+
+@import url('https://DiscordStyles.github.io/DarkMatter/src/base.css');
+
+/* Variables */
+:root {
+    --avatar-size: 32px;
+    /* --background-image: url("https://i.imgur.com/7SbtKvw.png"); */
+    --background-image: none;
+    --home-image: url('https://i.imgur.com/233d55Y.gif');
+    --background-solid: #161921;
+    --background-solid-dark: #101218;
+    --background-solid-darker: #0c0e12;
+    --accent: 37, 172, 232;
+    --accent-alt: 29, 101, 134;
+}
+
+/* Title bar */
+div[class*="typeWindows-"]::after {
+    background-color: rgba(var(--black), 0.3);
+}
+
+/* Member bar */
+.container-2o3qEW {
+    background-color: rgba(var(--black), 0);
+}
+
+/* Chat & Member bar */
+.chat-2ZfjoI {
+    background-color: rgba(var(--black), 0);
+}
+
+/* Side bar */
+.sidebar-1tnWFu {
+    background-color: rgba(var(--black), 0);
+}
+
+/* Message box */
+.channelTextArea-1FufC0 {
+    background-color: rgba(var(--black), 0.2);
+    box-shadow: none !important;
+}
+
+/* div[class^='chat'] main form {
+    background-color: rgba(var(--black), 0.1);
+} */
+
+/* Top bar */
+.container-ZMc96U.themed-Hp1KC_ {
+    background-color: rgba(var(--black), 0.1);
+}
+
+/* Guild bar */
+ul[data-list-id='guildsnav'] {
+    background-color: rgba(var(--black), 0);
+}
+
+/* Control panel */
+div[class^='sidebar-']>section>div:last-child {
+    background-color: rgba(var(--black), 0.1);
+}
