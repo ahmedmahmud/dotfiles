@@ -1,0 +1,49 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "editor.fontFamily": "MonoLisa, Feather, FiraCode Nerd Font, Segoe UI Emoji, monospace",
+    "editor.tabSize": 2,
+    
+    // Clean mode
+    // "window.menuBarVisibility": "compact",
+    "editor.minimap.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "editor.renderLineHighlight": "none",
+    "editor.overviewRulerBorder": true, // removes border from overview ruler (located on the right, same position as the scrollbar)
+    "editor.hideCursorInOverviewRuler": true, // hides cursor mark in the overview ruler
+    "editor.occurrencesHighlight": false, // removes highlights occurrences (still works when you select a word)
+    "editor.glyphMargin": false, // removes the space used mainly for debugging indicators
+    "explorer.openEditors.visible": 0, // removes the open editors section at the top of the sidebar, you can see the opened files with ⌘ + ⌥ + Tab
+    "workbench.activityBar.visible": false,
+    "workbench.editor.tabCloseButton": "off",
+    "editor.guides.indentation": false,
+    "terminal.integrated.fontFamily": "MonoLisa, FiraCode Nerd Font",
+    "terminal.integrated.gpuAcceleration": "off",
+    "window.titleBarStyle": "custom",
+    "breadcrumbs.enabled": false,
+    "editor.matchBrackets": "never",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "extensions.ignoreRecommendations": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editor.enablePreview": false,
+
+    "C_Cpp.clang_format_fallbackStyle": "GNU",
+
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+
+    "haskell.manageHLS": "GHCup",
+    "[haskell]": {
+        "editor.defaultFormatter": "haskell.haskell"
+    },
+    "window.zoomLevel": 1,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+}
