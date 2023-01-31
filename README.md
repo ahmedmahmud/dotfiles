@@ -16,7 +16,7 @@
 - [Bottom](https://github.com/ClementTsang/bottom)
 
 ## Images
-![desktop image](desktop.png)
+![desktop image](assets/desktop.png)
 
 ## Usage
 [Chezmoi](https://www.chezmoi.io/) is used to manage the dotfiles
