@@ -44,3 +44,4 @@ scoop install chezmoi
 - [ ] Improve layouts, possible multi window layout with easy focus/full-screening
 - [ ] Dedicated image and video
 - [ ] Dedicated pdf viewer
+- [ ] Improve fish aliasing and keybinds
