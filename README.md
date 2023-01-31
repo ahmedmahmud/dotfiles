@@ -7,6 +7,8 @@
 - Picom (compositor)
 - VS Code (editor)
 - Fish (shell)
+- SDDM (display manager)
+  - sugar-candy (theme)
 
 ## Tools
 - [Bat](https://github.com/sharkdp/bat)
@@ -26,9 +28,10 @@ pacman -S chezmoi
 scoop install chezmoi
 ```
 
-**Note:** Xorg config files are **not** managed by chezmoi and must manually be copied over
+**Note:** Config files located in `etc` and `usr` are **not** managed by chezmoi and must be manually copied over to their respective locations. They also must be manually copied back in after modifications
 
 ## Todo
+- [ ] **ADD ALL DEPENDENCIES TO A LIST**
 - [ ] System dashboard widget
   - [ ] System controls i.e. volume/brightness
   - [ ] Calender
