@@ -26,6 +26,8 @@ pacman -S chezmoi
 scoop install chezmoi
 ```
 
+**Note:** Xorg config files are **not** managed by chezmoi and must manually be copied over
+
 ## Todo
 - [ ] System dashboard widget
   - [ ] System controls i.e. volume/brightness
