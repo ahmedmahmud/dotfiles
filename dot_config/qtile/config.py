@@ -12,7 +12,7 @@ from screens import screens
 follow_mouse_focus = False
 bring_front_click = False
 cursor_warp = False
-auto_fullscreen = False
+auto_fullscreen = True
 focus_on_window_activation = "smart"
 reconfigure_screens = True
 # If things like steam games want to auto-minimize themselves when losing

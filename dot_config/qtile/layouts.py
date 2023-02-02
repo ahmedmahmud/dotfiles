@@ -13,18 +13,18 @@ layouts = [
         margin        = 6,
         border_width  = 2,
     ),
-    layout.Floating(	
+    layout.Max(
         border_focus  = color_schema["sapphire"],
         border_normal = color_schema["base"],
         margin        = 12,
         border_width  = 2,
     ),
-    layout.Spiral(
-        border_focus  = color_schema["sapphire"],
-        border_normal = color_schema["base"],
-        margin        = 12,
-        border_width  = 2,
-    )
+    # layout.Floating(	
+    #     border_focus  = color_schema["sapphire"],
+    #     border_normal = color_schema["base"],
+    #     margin        = 12,
+    #     border_width  = 2,
+    # ),
 ]
 
 floating_layout = layout.Floating(

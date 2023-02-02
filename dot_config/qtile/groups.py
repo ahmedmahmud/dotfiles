@@ -1,7 +1,8 @@
-"""
-Group definitions are here
-"""
-from libqtile.config import Group, Match
+####################
+### Qtile Groups ###
+
+####################
+from libqtile.config import Group, Match, ScratchPad, DropDown
 
 group_definitions = [
     {
@@ -16,28 +17,34 @@ group_definitions = [
         'layout': 'columns'
     },
     {
-        'name': 'ms-teams',
+        'name': 'three',
         'label': 'THREE',
-        'matches': [Match(wm_class='teams-for-linux')],
         'layout': 'columns'
     },
     {
-        'name': 'telegram',
+        'name': 'four',
         'label': 'FOUR',
-        'matches': [Match(wm_class='telegram-desktop')],
         'layout': 'columns'
     },
     {
         'name': 'spotify',
-        'label': 'FIVE',
-        'matches': [Match(wm_class='Spotify')],
+        'label': 'MUS',
+        'matches': [Match(wm_class='spotify')],
         'layout': 'columns'
     },
     {
-        'name': 'miscellaneous',
-        'label': 'SIX',
+        'name': 'chat',
+        'label': 'CHAT',
+        'matches': [Match(wm_class='Discord')],
         'layout': 'columns'
     },
 ]
 
-groups = [Group(**group) for group in group_definitions]
+scratchpad_definitions = [
+    ScratchPad("sp", [
+        DropDown("term", "alacritty", x=0.2, y=0.2, width=0.6, height=0.6),
+        DropDown("notes", "alacritty -e nvim", x=0.2, y=0.2, width=0.6, height=0.6),
+    ])
+]
+
+groups = [Group(**group) for group in group_definitions] + scratchpad_definitions
