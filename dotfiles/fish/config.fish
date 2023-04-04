@@ -1,7 +1,5 @@
 # -- PATHS -- #
 fish_add_path $HOME/.cargo/bin # CARGO
-fish_add_path /mnt/wsl/PHYSICALDRIVE1p5/home/ahmed/Documents/WACC_28/compile # WACC
-fish_add_path $HOME/.local/bin
 
 # -- INTERACTIVE SETTINGS -- #
 if status is-interactive
@@ -17,7 +15,6 @@ if status is-interactive
     # Set zo to use correct command
     if grep -qi WSL /proc/version
         set -gx ZO_METHOD "wslview"
-        
     end    
 end
 
@@ -28,16 +25,3 @@ end
 if type -q batcat
     alias bat="batcat"
 end
-
-#set -x FZF_DEFAULT_OPTS '
-#    --cycle
-#    --border
-#    --layout=reverse
-#    --preview-window=wrap
-#    --color=fg:#e5e9f0,hl:#81a1c1
-#    --color=fg+:#e5e9f0,hl+:#81a1c1
-#    --color=info:#eacb8a,prompt:#bf6069,pointer:#b48dac
-#    --color=marker:#a3be8b,spinner:#b48dac,header:#a3be8b
-#'
-
-test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)

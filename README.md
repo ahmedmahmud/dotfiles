@@ -3,48 +3,52 @@
 ```ocaml
 🥶 Dripfiles
 ```
-
-![](assets/preview_empty.png)
-![](assets/preview_apps.png)
+<p float="left">
+  <img src="assets/preview_empty.png" width="487" />
+  <img src="assets/preview_apps.png" width="487" />
+</p>
 
 <div align="left">
 
 ---
 
-
-<fnzc>
-<b>My dotfiles for my linux, windows and wsl environments</b>
+<samp>
+<b>My dotfiles across my linux, windows and wsl environments</b>
 </samp>
 
 <br />
+<br />
+
 
 > 🧊 Tool specific documentation are in their respective subdirectories
 
 ---
 ## <samp> Setup <samp>
 
-These dotfiles are managed by [`dotdrop`](https://github.com/deadc0de6/dotdrop). Its configuration file is `config.yaml`, profiles include relevant configuration files for their respective environments
-### <samp><kbd>I.</kbd> [Install](https://dotdrop.readthedocs.io/en/latest/installation)
+These dotfiles are managed by [`dotter`](https://github.com/SuperCuber/dotter). Its configuration folder is `.dotter`
+ - `global.toml` - Configuration for all `packages`
+ - `linux/wsl/windows.toml` - Configuration for "profiles" that contain the relevant `packages`
+
+### <samp><kbd>I.</kbd> [Install dotter](https://github.com/SuperCuber/dotter#installation)
 ```bash
-# Arch (AUR)
-$ yay -S dotdrop
-# Debian / Ubuntu
-$ sudo apt install dotdrop
-# Windows
-$ pip3 install dotdrop --user
-# Additional step for WSL
-$ pip install python-magic-bin
+# AUR
+$ yay -S dotter-rs-bin
+# Cargo
+$ cargo install dotter
 ```
 
 ### <samp><kbd>II.</kbd> Apply
-Choose the profile that makes sense for your environment or define a new one
+After configuring choosing a profile or creating your own with `packages` you want, run:
 ```bash
-$ dotdrop install -p <profile>
+$ dotter deploy -l .dotter/<profile>.toml
 ```
+> **Note:** `--force` flag may be required if you have existing files as these need to be replaced. Check conflicts with the `-d` flag
+
 ---
 ## <samp> Features </samp>
-> 🏗️ Incomplete list
+> 🏗️ Incomplete list...
 
+- [ ] Shell script for easier setup
 - [ ] Hyprland
     - [ ] Keybinds
     - [ ] Window rules
@@ -52,9 +56,9 @@ $ dotdrop install -p <profile>
 - [ ] Status Bar
 - [ ] Control Panel
 - [ ] Fish
-- [x] Alacritty <kbd style="background-color:#a6e3a144;color:#cdd6f4;border:1px solid #a6e3a1;border-radius:30px;padding:1px 3px;margin: 0 0 2px 5px">complete</kbd>
-- [x] Locking & Powermenu <kbd style="background-color:#a6e3a144;color:#cdd6f4;border:1px solid #a6e3a1;border-radius:30px;padding:1px 3px;margin: 0 0 2px 5px">complete</kbd>
-- [x] Wofi <kbd style="background-color:#a6e3a144;color:#cdd6f4;border:1px solid #a6e3a1;border-radius:30px;padding:1px 3px;margin: 0 0 2px 5px">complete</kbd>
-- [x] Clipboard management <kbd style="background-color:#a6e3a144;color:#cdd6f4;border:1px solid #a6e3a1;border-radius:30px;padding:1px 3px;margin: 0 0 2px 5px">complete</kbd>
-- [x] Screenshot utilities <kbd style="background-color:#a6e3a144;color:#cdd6f4;border:1px solid #a6e3a1;border-radius:30px;padding:1px 3px;margin: 0 0 2px 5px">complete</kbd>
-- [x] Neovim <kbd style="background-color:#a6e3a144;color:#cdd6f4;border:1px solid #a6e3a1;border-radius:30px;padding:1px 3px;margin: 0 0 2px 5px">complete</kbd>
+- [x] Alacritty <kbd>complete</kbd>
+- [x] Locking & Powermenu <kbd>complete</kbd>
+- [x] Wofi <kbd>complete</kbd>
+- [x] Clipboard management <kbd>complete</kbd>
+- [x] Screenshot utilities <kbd>complete</kbd>
+- [x] Neovim <kbd>complete</kbd>

@@ -1,0 +1,6 @@
+includes = []
+packages = ["hyprland", "swaylock", "waybar", "alacritty", "rofimoji", "wofi", "fish"]
+
+[files]
+
+[variables]
