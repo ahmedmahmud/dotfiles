@@ -32,15 +32,16 @@ These dotfiles are managed by [`dotter`](https://github.com/SuperCuber/dotter). 
 ### <samp><kbd>I.</kbd> [Install dotter](https://github.com/SuperCuber/dotter#installation)
 ```bash
 # AUR
-$ yay -S dotter-rs-bin
+yay -S dotter-rs-bin
+
 # Cargo
-$ cargo install dotter
+cargo install dotter
 ```
 
 ### <samp><kbd>II.</kbd> Apply
 After configuring choosing a profile or creating your own with `packages` you want, run:
 ```bash
-$ dotter deploy -l .dotter/<profile>.toml
+dotter deploy -l .dotter/<profile>.toml
 ```
 > **Note:** `--force` flag may be required if you have existing files as these need to be replaced. Check conflicts with the `-d` flag
 
