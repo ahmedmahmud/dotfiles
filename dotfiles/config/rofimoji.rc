@@ -1,0 +1,3 @@
+hidden-descriptions=True
+max-recent=0
+selector-args="-theme emoji -kb-row-left Left -kb-row-right Right -kb-move-char-back Control+b -kb-move-char-forward Control+f"

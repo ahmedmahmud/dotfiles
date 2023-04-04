@@ -1,0 +1,67 @@
+#window {
+    background-color: transparent;
+    filter: blur(5px);
+
+    border-radius: 15px;
+    font-family: Iosevka Nerd Font;
+    animation: fadeIn;
+    animation-duration: 0.2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#outer-box {
+    margin: 30px;
+    border-radius: 10px;
+    background-color: #1e1e2e;
+    background-color: transparent;
+    border: 1px rgba(49, 50, 68, 0.9) solid;
+    box-shadow: 0px 0px 10px 3px rgba(20, 20, 20, 0.6);
+  
+  padding-bottom: 15px;
+}
+
+#inner-box {
+    color: #d8dee9;
+    padding: 10px;
+    padding-top: 5px;
+}
+
+#input {
+    color: #e5e9f0;
+    border: 1px solid rgba(180, 190, 254, 0.5);
+    background-color: #181825;
+    padding: 6px;
+    margin: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#entry {
+    border-radius: 5px;
+    padding: 7px;
+    margin: 0px 5px 0px 5px;
+}
+
+
+#entry:selected {
+    background-color: rgba(180, 190, 254, 0.5);
+}
+     
+#text:selected {
+    color: #d8dee9;
+}
+
+#text {
+    font-size: 16px;
+    padding: 7px;
+    color: #d8dee9;
+} 
+
+#img {
+    padding: 4px;
+}

@@ -1,0 +1,12 @@
+allow_images=true
+allow_markup=true
+insensitive=true
+hide_scroll=false
+no_actions=true
+term=alacritty
+width=35%
+always_parse_args=true
+/* dynamic_lines=true */
+lines=8
+line_wrap=word
+prompt=Search...

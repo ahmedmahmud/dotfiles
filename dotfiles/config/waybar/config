@@ -1,0 +1,91 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+
+    // Choose the order of the modules
+    "modules-left": ["wlr/workspaces"],
+    "modules-center": ["custom/waybar-mpris"],
+    "modules-right": ["pulseaudio", "network", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
+
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "format-active": " {icon} ",
+        "on-click": "activate"
+    },
+
+    "network": {
+        "format-wifi": "",
+        "tooltip-format": "{essid}",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰖪",
+        "on-click": "networkmanager_dmenu"
+    },
+    
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+
+    "custom/waybar-mpris": {
+        "return-type": "json",
+        "exec": "waybar-mpris --position --autofocus --play \"\" --pause \"\"",
+        "on-click": "waybar-mpris --send toggle",
+
+        // This option will switch between players on right click.
+        "on-click-right": "waybar-mpris --send next",
+        
+        // The options below will go to next/previous track on scroll
+        "on-scroll-up": "waybar-mpris --send next",
+        "on-scroll-down": "waybar-mpris --send prev",
+
+        // The options below will switch the selected player on scroll
+        // "on-scroll-up": "waybar-mpris --send player-next",
+        // "on-scroll-down": "waybar-mpris --send player-prev",
+        
+        "escape": true,
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        // "format-alt": " {:%d/%m/%Y}",
+        // "format": " {:%H:%M}"
+        "format-alt": "{:%d/%m/%Y}",
+        "format": "{:%H:%M}"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}",
+        "format-charging": "",
+        "format-plugged": "",
+        "format-alt": "{icon}",
+        "format-icons": ["", "",  "", "", "", "", "", "", "", "", "", ""]
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "default": ["", "", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/lock": {
+        "tooltip": false,
+        "on-click": "sh -c '(sleep 0.5s; swaylock --grace 0)' & disown",
+        "format": "",
+    },
+    "custom/power": {
+        "tooltip": false,
+        "on-click": "wlogout &",
+        "format": "襤"
+    }
+}
+
