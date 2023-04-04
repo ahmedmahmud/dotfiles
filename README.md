@@ -23,7 +23,7 @@
 ---
 ## <samp> Setup <samp>
 
-These dotfiles are managed by [`dotdtop`](https://github.com/deadc0de6/dotdrop). Its configuration file is `config.yaml`, profiles include relevant configuration files for their respective environments
+These dotfiles are managed by [`dotdrop`](https://github.com/deadc0de6/dotdrop). Its configuration file is `config.yaml`, profiles include relevant configuration files for their respective environments
 ### <samp><kbd>I.</kbd> [Install](https://dotdrop.readthedocs.io/en/latest/installation)
 ```bash
 # Arch (AUR)
