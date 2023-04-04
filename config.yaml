@@ -26,6 +26,9 @@ dotfiles:
   f_config_rofimoji.rc:
     src: config/rofimoji.rc
     dst: ~/.config/rofimoji.rc
+  d_config_fish:
+    src: config/fish
+    dst: ~/.config/fish
 profiles:
   linux:
     dotfiles:
@@ -35,3 +38,7 @@ profiles:
     - d_config_waybar
     - d_config_wofi
     - f_config_rofimoji.rc
+    - d_config_fish
+  wsl:
+    dotfiles:
+    - d_config_fish
