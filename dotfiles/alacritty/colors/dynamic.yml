@@ -1,0 +1,78 @@
+colors:
+    primary:
+        background: "{{ colors.background }}"
+        foreground: "{{ colors.foreground }}"
+
+        dim_foreground: "{{ colors.foreground }}" # use the numbered colors here? 15/16?
+        bright_foreground: "{{ colors.foreground }}"
+
+    # Cursor colors
+    cursor:
+        text: "{{ colors.background }}"
+        cursor: "{{ colors.base06 }}" # change to an accent?
+    vi_mode_cursor:
+        text: "{{ colors.background }}"
+        cursor: "{{ colors.base07 }}" # change to an accent?
+
+    # Search colors
+    search:
+        matches:
+            foreground: "{{ colors.background }}"
+            background: "{{ colors.foreground }}" # subtext0
+        focused_match:
+            foreground: "{{ colors.background }}"
+            background: "{{ colors.base0B }}" # green
+        footer_bar:
+            foreground: "{{ colors.background }}"
+            background: "{{ colors.foreground }}" # subtext0
+
+    # Keyboard regex hints
+    hints:
+        start:
+            foreground: "{{ colors.background }}"
+            background: "{{ colors.base0A }}" # yellow
+        end:
+            foreground: "{{ colors.background }}"
+            background: "{{ colors.foreground }}" # subtext0
+
+    # Selection colors
+    selection:
+        text: "{{ colors.background }}"
+        background: "{{ colors.base02 }}" # rosewater
+
+    # Normal colors
+    normal:
+        black: "{{ colors.base03 }}" # surface1
+        red: "{{ colors.base08 }}" # red
+        green: "{{ colors.base0B }}" # green
+        yellow: "{{ colors.base0A }}" # yellow
+        blue: "{{ colors.base0D }}" # blue
+        magenta: "{{ colors.base0E }}" # pink
+        cyan: "{{ colors.base0C }}" # teal
+        white: "{{ colors.foreground }}" # subtext1
+
+    # Bright colors
+    bright:
+        black: "{{ colors.base04 }}" # surface2
+        red: "{{ colors.base08 }}" # red
+        green: "{{ colors.base0B }}" # green
+        yellow: "{{ colors.base0A }}" # yellow
+        blue: "{{ colors.base0D }}" # blue
+        magenta: "{{ colors.base0E }}" # pink
+        cyan: "{{ colors.base0C }}" # teal
+        white: "{{ colors.foreground }}" # subtext0
+
+    # Dim colors
+    dim:
+        black: "{{ colors.base03 }}" # surface1
+        red: "{{ colors.base08 }}" # red
+        green: "{{ colors.base0B }}" # green
+        yellow: "{{ colors.base0A }}" # yellow
+        blue: "{{ colors.base0D }}" # blue
+        magenta: "{{ colors.base0E }}" # pink
+        cyan: "{{ colors.base0C }}" # teal
+        white: "{{ colors.foreground }}" # subtext1
+
+    indexed_colors:
+        - { index: 16, color: "#FAB387" }
+        - { index: 17, color: "#F5E0DC" }
