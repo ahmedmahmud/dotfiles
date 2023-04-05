@@ -1,0 +1,84 @@
+{
+    "title": "Hyprland",
+    "theme": "mocha",
+    "columns": 3,
+    "width": 1200,
+    "categories": [
+        {
+            "name": "launcher",
+            "binds": [
+                {
+                    "description": "run prompt",
+                    "key": "super + r"
+                },
+                {
+                    "description": "terminal",
+                    "key": "super + enter"
+                },
+                {
+                    "description": "file manager",
+                    "key": "super + e"
+                }
+            ]
+        },
+        {
+            "name": "utils",
+            "binds": [
+                {
+                    "description": "screenshot",
+                    "key": "super + s"
+                },
+                {
+                    "description": "emoji",
+                    "key": "super + k"
+                },
+                {
+                    "description": "clipboard",
+                    "key": "super + c"
+                }
+            ]
+        },
+        {
+            "name": "window",
+            "binds": [
+                {
+                    "description": "toggle floating",
+                    "key": "super + v"
+                },
+                {
+                    "description": "fullscreen",
+                    "key": "super + f"
+                },
+                {
+                    "description": "center",
+                    "key": "super + tab"
+                },
+                {
+                    "description": "move window",
+                    "key": "super + lmb + drag"
+                },
+                {
+                    "description": "resive window",
+                    "key": "super + rmb + drag"
+                }
+            ]
+        },
+        {
+            "name": "hyprland",
+            "binds": [
+                {
+                    "description": "move focus",
+                    "key": "super + arrow"
+                },
+                {
+                    "description": "switch workspace",
+                    "key": "super + [1-9]"
+                },
+                {
+                    "description": "move to workspace",
+                    "key": "super + shift + [1-9]"
+                }
+            ]
+        }
+    ]
+}
