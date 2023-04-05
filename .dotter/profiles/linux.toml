@@ -1,4 +1,4 @@
-includes = [".dotter/themes/dynamic.toml"]
+includes = [".dotter/themes/catppuccin.toml"]
 packages = ["hyprland", "swaylock", "waybar", "alacritty", "rofimoji", "wofi", "fish"]
 
 [files]
