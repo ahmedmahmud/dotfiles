@@ -1,4 +1,6 @@
 [helpers]
+hex_to_rgb = ".dotter/helpers/hex_to_rgb.rhai"
+hex_to_rgba = ".dotter/helpers/hex_to_rgba.rhai"
 
 [hyprland]
 depends = []
@@ -22,7 +24,7 @@ depends = ["colors"]
 depends = ["colors"]
 
 [alacritty.files]
-"dotfiles/alacritty" = "~/.config/alacritty"
+"dotfiles/alacritty/alacritty.yml" = "~/.config/alacritty/alacritty.yml"
 
 [rofimoji.files]
 "dotfiles/rofimoji.rc" = "~/.config/rofimoji.rc"

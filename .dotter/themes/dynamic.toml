@@ -1,4 +1,4 @@
-[colors.variables.color]
+[colors.variables.colors]
     # # Aquarim - Copied from base46 NvChad
     background = "#20202A" # base00
     foreground = "#bac0cb" # base05
@@ -20,6 +20,9 @@
     base0E = "#f6bbe7"
     base0F = "#eAc1c1"
 
+[alacritty.files]
+"dotfiles/alacritty/themes/dynamic.yml" = "~/.config/alacritty/themes/dynamic.yml"
+
 [alacritty.variables]
 theme = "dynamic"
 
@@ -33,3 +36,9 @@ ring-ver-color = "base0F"
 ring-wrong-color = "base08"
 text-color = "base05"
 text-wrong-color = "base08"
+
+[wofi.variables]
+base_color = "background"
+border_color = "base01"
+text_color = "foreground"
+highlight_color = "base0F"
