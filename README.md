@@ -48,7 +48,7 @@ dotter deploy -l .dotter/profiles/<profile>.toml
 
 ---
 
-# <a name="profile_and_themes"></a> Profiles and themes
+## <samp><a name="profile_and_themes"></a> Profiles and themes
 
 These dotfiles are managed by dotter. In the `.dotter` file you will find a collection of `.toml` files.
 
@@ -61,8 +61,8 @@ These dotfiles are managed by dotter. In the `.dotter` file you will find a coll
 
 Inside `profiles` each `.toml` file is a `profile` of structure:
 ```toml
-includes[...] # These are like "imports" to configure package's variables and file mappings
-packages[...] # A list of packages you want to include the dotfiles for
+includes = [] # These are like "imports" to configure package's variables and file mappings
+packages = [] # A list of packages you want to include the dotfiles for
 
 [files] # Table of any further file mapping changes
 
