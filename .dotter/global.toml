@@ -9,11 +9,17 @@ depends = []
 [waybar.files]
 "dotfiles/waybar" = "~/.config/waybar"
 
+[swaylock]
+depends = ["colors"]
+
 [swaylock.files]
 "dotfiles/swaylock" = "~/.config/swaylock"
 
 [wofi.files]
 "dotfiles/wofi" = "~/.config/wofi"
+
+[alacritty]
+depends = ["colors"]
 
 [alacritty.files]
 "dotfiles/alacritty" = "~/.config/alacritty"
@@ -24,3 +30,5 @@ depends = []
 [fish.files]
 "dotfiles/fish/config.fish" = "~/.config/fish/config.fish"
 "dotfiles/fish/fish_plugins" = "~/.config/fish/fish_plugins"
+
+[colors]

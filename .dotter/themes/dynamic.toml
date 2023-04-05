@@ -1,0 +1,35 @@
+[colors.variables.color]
+    # # Aquarim - Copied from base46 NvChad
+    background = "#20202A" # base00
+    foreground = "#bac0cb" # base05
+    cursor = "#bac0cb" # base05
+    base00 = "#20202A"
+    base01 = "#2c2e3e"
+    base02 = "#3D4059"
+    base03 = "#313449"
+    base04 = "#63718b"
+    base05 = "#bac0cb"
+    base06 = "#c5cbd6"
+    base07 = "#ced4df"
+    base08 = "#ebb9b9"
+    base09 = "#e8cca7"
+    base0A = "#e6dfb8"
+    base0B = "#b1dba4"
+    base0C = "#b8dceb"
+    base0D = "#a3b8ef"
+    base0E = "#f6bbe7"
+    base0F = "#eAc1c1"
+
+[alacritty.variables]
+theme = "dynamic"
+
+[swaylock.variables]
+bs-hl-color = "base08"
+key-hl-color = "base0F"
+inside-color = "base00"
+ring-color = "base01"
+ring-clear-color = "base0F"
+ring-ver-color = "base0F"
+ring-wrong-color = "base08"
+text-color = "base05"
+text-wrong-color = "base08"

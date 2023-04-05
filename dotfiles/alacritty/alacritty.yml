@@ -1,5 +1,5 @@
 import:
-  - ~/.config/alacritty/colors/mocha.yml
+  - ~/.config/alacritty/themes/{{ theme }}.yml
 
 env:
   TERM: alacritty

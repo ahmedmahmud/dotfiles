@@ -17,28 +17,22 @@ effect-blur=20x10
 effect-vignette=0.5:0.5
 
 color=00000000
-
-bs-hl-color=#f38ba8
-key-hl-color=#cba6f7
-
-inside-color=#1e1e2e
-inside-clear-color=#1e1e2e
-inside-ver-color=#1e1e2e
-inside-wrong-color=#1e1e2e
-
-line-color=#11111b
-line-ver-color=#11111b
-line-clear-color=#11111b
-line-wrong-color=#11111b
-
-ring-color=#181825
-ring-clear-color=#cba6f7
-ring-ver-color=#cba6f7
-ring-wrong-color=#f38ba8
-
 separator-color=00000000
 
-text-color=#cdd6f4
-text-clear-color=#cdd6f4
-text-ver-color=#cdd6f4
-text-wrong-color=#f38ba8
+bs-hl-color={{ lookup colors bs-hl-color }}
+key-hl-color={{ lookup colors key-hl-color }}
+
+inside-color={{ lookup colors inside-color }}
+inside-clear-color={{ lookup colors inside-color }}
+inside-ver-color={{ lookup colors inside-color }}
+inside-wrong-color={{ lookup colors inside-color }}
+
+ring-color={{ lookup colors ring-color }}
+ring-clear-color={{ lookup colors ring-clear-color }}
+ring-ver-color={{ lookup colors ring-ver-color }}
+ring-wrong-color={{ lookup colors ring-wrong-color }}
+
+text-color={{ lookup colors text-color }}
+text-clear-color={{ lookup colors text-color }}
+text-ver-color={{ lookup colors text-color }}
+text-wrong-color={{ lookup colors text-wrong-color }}
