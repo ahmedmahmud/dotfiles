@@ -8,3 +8,4 @@ width=35%
 always_parse_args=true
 line_wrap=word
 prompt=Search...
+term=wezterm
