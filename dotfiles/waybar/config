@@ -1,7 +1,7 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "margin-bottom":-10,
+    "margin-bottom":-8,
 
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces"],
