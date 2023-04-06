@@ -21,7 +21,7 @@
 
 #workspaces{
     background-color: transparent;
-    margin: 5px 20px;
+    margin: 13px 13px;
 }
 #workspaces button {
   background-color: @mantle;
@@ -127,7 +127,7 @@
 .icon,
 .icon_only, 
 .value_only {
-  margin: 5px 0;
+  margin: 13px 0;
 }
 
 .icon_only,
@@ -207,5 +207,5 @@
 #custom-power.icon_only {
   background-color: @red;
   font-size: 22px;
-  margin-right: 20px;
+  margin-right: 13px;
 }
