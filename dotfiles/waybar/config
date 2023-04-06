@@ -5,25 +5,12 @@
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces"],
     "modules-center": ["custom/waybar-mpris"],
-    "modules-right": ["pulseaudio", "network", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
+    "modules-right": ["network#icon_only", "pulseaudio#icon", "pulseaudio#value", "backlight#icon", "backlight#value", "battery#icon", "battery#value", "clock#value_only", "tray#icon_only", "custom/power#icon_only"],
 
     "wlr/workspaces": {
         "format": "{icon}",
         "format-active": " {icon} ",
         "on-click": "activate"
-    },
-
-    "network": {
-        "format-wifi": "",
-        "tooltip-format": "{essid}",
-        "format-ethernet": "󰈀",
-        "format-disconnected": "󰖪",
-        "on-click": "networkmanager_dmenu"
-    },
-    
-    "tray": {
-        "icon-size": 21,
-        "spacing": 10
     },
 
     "custom/waybar-mpris": {
@@ -35,54 +22,70 @@
         "on-click-right": "waybar-mpris --send next",
         
         // The options below will go to next/previous track on scroll
-        "on-scroll-up": "waybar-mpris --send next",
-        "on-scroll-down": "waybar-mpris --send prev",
-
-        // The options below will switch the selected player on scroll
-        // "on-scroll-up": "waybar-mpris --send player-next",
-        // "on-scroll-down": "waybar-mpris --send player-prev",
+        "on-scroll-up": "waybar-mpris --send player-next",
+        "on-scroll-down": "waybar-mpris --send -player-prev",
         
-        "escape": true,
+        "escape": true
     },
 
-    "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        // "format-alt": " {:%d/%m/%Y}",
-        // "format": " {:%H:%M}"
-        "format-alt": "{:%d/%m/%Y}",
-        "format": "{:%H:%M}"
+    "network#icon_only": {
+        "format-wifi": "", // There *is* an icon in this parenthesis incase you don't see it
+        "format-ethernet": "", // There *is* an icon in this parenthesis incase you don't see it
+        "format-disconnected": "",
+        "tooltip-format": "{essid}",
+        "on-click": "networkmanager_dmenu"
     },
-    "backlight": {
-        "device": "intel_backlight",
+
+    "pulseaudio#icon": {
         "format": "{icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-muted": "",
+        "format-icons": {
+            "default": ["", "", "", ""]
+        },
+        "scroll-step": 0.2, // Low due to touchpad, may be horrible on mouse
+        "on-click": "pavucontrol"
     },
-    "battery": {
+    "pulseaudio#value": {
+        "format": "{volume}",
+        "scroll-step": 0.2, // Low due to touchpad, may be horrible on mouse
+        "on-click": "pavucontrol"
+    },
+
+    "backlight#icon": {
+        "format": "{icon}",
+        "format-icons": ["", ""]
+    },
+
+    "backlight#value": {
+        "format": "{percent}"
+    },
+
+    "battery#icon": {
+        "format": "{icon}",
+        "format-charging": "",
+        "format-plugged": "", // Idk if this one does anything
+        "format-icons": ["", "",  "", "", "", "", "", "", "", "", "", ""],
         "states": {
             "warning": 30,
             "critical": 15
-        },
-        "format": "{icon}",
-        "format-charging": "",
-        "format-plugged": "",
-        "format-alt": "{icon}",
-        "format-icons": ["", "",  "", "", "", "", "", "", "", "", "", ""]
+        }
     },
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}%",
-        "format-muted": "",
-        "format-icons": {
-            "default": ["", "", " "]
-        },
-        "on-click": "pavucontrol"
+    "battery#value": {
+        "format": "{capacity}"
     },
-    "custom/lock": {
-        "tooltip": false,
-        "on-click": "sh -c '(sleep 0.5s; swaylock --grace 0)' & disown",
-        "format": "",
+
+    "clock#value_only": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d/%m/%Y}",
+        "format": "{:%H:%M}"
     },
-    "custom/power": {
+
+    "tray#icon_only": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+
+    "custom/power#icon_only": {
         "tooltip": false,
         "on-click": "wlogout &",
         "format": "襤"

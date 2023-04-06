@@ -1,17 +1,6 @@
 #window {
   background-color: transparent;
   font-family: Iosevka Nerd Font;
-  animation: fadeIn;
-  animation-duration: 0.2s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 #outer-box {

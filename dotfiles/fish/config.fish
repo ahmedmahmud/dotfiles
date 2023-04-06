@@ -3,6 +3,9 @@ fish_add_path $HOME/.cargo/bin # CARGO
 
 # -- INTERACTIVE SETTINGS -- #
 if status is-interactive
+    # Remove fish_greeting
+    set fish_greeting
+
     # -- HYDRO PROMPT -- #
     set -gx hydro_symbol_prompt ">"
     set -gx hydro_symbol_git_dirty "*"
