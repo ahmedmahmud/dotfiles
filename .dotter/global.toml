@@ -33,4 +33,7 @@ depends = ["colors"]
 "dotfiles/fish/config.fish" = "~/.config/fish/config.fish"
 "dotfiles/fish/fish_plugins" = "~/.config/fish/fish_plugins"
 
+[mako.files]
+"dotfiles/mako/config" = "~/.config/mako/config"
+
 [colors]

@@ -1,0 +1,28 @@
+# Colors
+
+# background-color=#24273a
+# text-color=#cad3f5
+# border-color=#8aadf4
+# progress-color=over #363a4f
+#
+# [urgency=high]
+# border-color=#f5a97f
+
+font=Segoe UI Variable Static Display 11
+background-color=#23213677
+text-color=#e0def4ee
+width=360
+height=300
+outer-margin=12
+margin=8
+padding=12
+border-size=1
+border-color=#6e6a8677
+border-radius=5
+progress-color=source #393552aa
+max-visible=3
+format=%s\n<span color="#e0def488">%b\n<span font_scale="subscript"><i>(%a)</i></span></span>
+default-timeout=2000
+
+[urgency=high]
+border-color=#eb6f92aa

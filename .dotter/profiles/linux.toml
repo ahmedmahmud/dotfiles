@@ -1,5 +1,5 @@
 includes = [".dotter/themes/catppuccin.toml"]
-packages = ["hyprland", "swaylock", "waybar", "alacritty", "rofimoji", "wofi", "fish"]
+packages = ["hyprland", "swaylock", "waybar", "alacritty", "rofimoji", "wofi", "fish", "mako"]
 
 [files]
 
