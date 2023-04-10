@@ -1,6 +1,0 @@
-includes = []
-packages = ["fish"]
-
-[files]
-
-[variables]

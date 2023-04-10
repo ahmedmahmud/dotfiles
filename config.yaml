@@ -1,0 +1,102 @@
+config:
+  backup: true
+  banner: false
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: true
+  func_file:
+  - template_functions.py
+
+dotfiles:
+  hypr:
+    src: hypr
+    dst: ~/.config/hypr
+  waybar:
+    src: waybar
+    dst: ~/.config/waybar
+  fish:
+    src: fish
+    dst: ~/.config/fish
+  # alacritty:
+  #   src: alacritty
+  #   dst: ~/.config/alacritty
+  wezterm:
+    src: wezterm
+    dst: ~/.config/wezterm
+  wofi:
+    src: wofi
+    dst: ~/.config/wofi
+  mako:
+    src: mako
+    dst: ~/.config/mako
+  swaylock:
+    src: swaylock
+    dst: ~/.config/swaylock
+  rofimoji:
+    src: rofimoji.rc
+    dst: ~/.config/rofimoji.rc
+
+profiles:
+  asus:
+    dotfiles:
+    - hypr
+    - waybar
+    - fish
+    # - alacritty
+    - wezterm
+    - wofi
+    - mako
+    - swaylock
+    - rofimoji
+variables:  
+  colors:
+    primary: "#b4befe" # lavender
+    rosewater: "#f5e0dc"
+    flamingo: "#f2cdcd"
+    pink: "#f5c2e7"
+    mauve: "#cba6f7"
+    red: "#f38ba8"
+    maroon: "#eba0ac"
+    peach: "#fab387"
+    yellow: "#f9e2af"
+    green: "#a6e3a1"
+    teal: "#94e2d5"
+    sky: "#89dceb"
+    sapphire: "#74c7ec"
+    blue: "#89b4fa"
+    lavender: "#b4befe"
+    text: "#cdd6f4"
+    subtext1: "#bac2de"
+    subtext0: "#a6adc8"
+    overlay2: "#9399b2"
+    overlay1: "#7f849c"
+    overlay0: "#6c7086"
+    surface2: "#585b70"
+    surface1: "#45475a"
+    surface0: "#313244"
+    base: "#1e1e2e"
+    mantle: "#181825"
+    crust: "#11111b"
+
+  # alacritty:
+  # theme: "{{@@ colors.mocha @@}}"
+
+  # swaylock:
+  bs_hl_color: "{{@@ colors.red @@}}"
+  key_hl_color: "{{@@ colors.primary @@}}"
+  inside_color: "{{@@ colors.mantle @@}}"
+  ring_color: "{{@@ colors.base @@}}"
+  ring_clear_color: "{{@@ colors.primary @@}}"
+  ring_ver_color: "{{@@ colors.primary @@}}"
+  ring_wrong_color: "{{@@ colors.red @@}}"
+  sl_text_color: "{{@@ colors.text @@}}"
+  text_wrong_color: "{{@@ colors.red @@}}"
+
+  # wofi:
+  base_color: "{{@@ colors.mantle @@}}"
+  border_color: "{{@@ colors.surface0 @@}}"
+  wf_text_color: "{{@@ colors.text @@}}"
+  highlight_color: "{{@@ colors.primary @@}}"

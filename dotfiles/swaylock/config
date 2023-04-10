@@ -19,20 +19,20 @@ effect-vignette=0.5:0.5
 color=00000000
 separator-color=00000000
 
-bs-hl-color={{ lookup colors bs-hl-color }}
-key-hl-color={{ lookup colors key-hl-color }}
+bs-hl-color={{@@ bs_hl_color @@}}
+key-hl-color={{@@ key_hl_color @@}}
 
-inside-color={{ lookup colors inside-color }}
-inside-clear-color={{ lookup colors inside-color }}
-inside-ver-color={{ lookup colors inside-color }}
-inside-wrong-color={{ lookup colors inside-color }}
+inside-color={{@@ inside_color @@}}
+inside-clear-color={{@@ inside_color @@}}
+inside-ver-color={{@@ inside_color @@}}
+inside-wrong-color={{@@ inside_color @@}}
 
-ring-color={{ lookup colors ring-color }}
-ring-clear-color={{ lookup colors ring-clear-color }}
-ring-ver-color={{ lookup colors ring-ver-color }}
-ring-wrong-color={{ lookup colors ring-wrong-color }}
+ring-color={{@@ ring_color @@}}
+ring-clear-color={{@@ ring_clear_color @@}}
+ring-ver-color={{@@ ring_ver_color @@}}
+ring-wrong-color={{@@ ring_wrong_color @@}}
 
-text-color={{ lookup colors text-color }}
-text-clear-color={{ lookup colors text-color }}
-text-ver-color={{ lookup colors text-color }}
-text-wrong-color={{ lookup colors text-wrong-color }}
+text-color={{@@ sl_text_color @@}}
+text-clear-color={{@@ sl_text_color @@}}
+text-ver-color={{@@ sl_text_color @@}}
+text-wrong-color={{@@ text_wrong_color @@}}
