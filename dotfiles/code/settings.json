@@ -1,0 +1,48 @@
+{
+  // Appearance
+  "workbench.colorTheme": "Rosé Pine Moon",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.fontFamily": "Iosevka Nerd Font, MonoLisa, FiraCode Nerd Font, monospace",
+  "editor.tabSize": 2,
+  "workbench.sideBar.location": "right",
+
+  // Terminal settings
+  "terminal.integrated.fontFamily": "MonoLisa, FiraCode Nerd Font",
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+
+  // Behaviour
+  "workbench.editor.enablePreview": false,
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // Make UI cleaner
+  "editor.minimap.enabled": false,          // Remove RHS minimap
+  "workbench.layoutControl.enabled": false, // Hide layout control (Left of window controls) for sidebar toggle etc.
+  "editor.occurrencesHighlight": false,     // Removes occurence highlights, on hover (Still shows on selections)
+  "editor.guides.indentation": false,       // Hide indentation lines
+  "workbench.activityBar.visible": false,   // Hide main bar, use shortcuts or command pallette
+  "breadcrumbs.enabled": false,             // Hide breadcrumbs (under tab bar)
+  "editor.hideCursorInOverviewRuler": true, // Hides cursor mark in the overview ruler
+  "editor.overviewRulerBorder": false,      // Removes border from scrollbar area
+  "extensions.ignoreRecommendations": true, // Hide "recommendations" tab on extension pane
+  "explorer.openEditors.visible": 0,        // Removes the open editors section at the top of the sidebar, you can see the opened files with ⌘ + ⌥ + Tab
+  "editor.matchBrackets": "never",          // Hide matched bracket box highlighting. Use "Subtle Match Brackets"
+  "editor.renderLineHighlight": "none",     // Don't highlight current line
+  "workbench.editor.tabCloseButton": "off", // Hide close icon on tabs
+  "window.menuBarVisibility": "toggle",     // Hide [File, Edit ...] bar, Alt to toggle
+  // "editor.scrollbar.vertical": "hidden",    // Hide vertical scrollbar
+  // "editor.glyphMargin": false,              // Removes padding on line-numbers
+  // "window.titleBarStyle": "custom",         // Use custom instead of native window decorations, may or may not be "cleaner"
+
+  // Custom color to differentiate sidebar from main window
+  "workbench.colorCustomizations": {
+    "sideBar.background": "#27253d"
+  },
+
+  // Extension settings
+  "color-highlight.markRuler": false,
+  "svelte.enable-ts-plugin": true,
+  "explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": 1,
+}
