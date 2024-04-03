@@ -36,4 +36,7 @@ depends = ["colors"]
 [mako.files]
 "dotfiles/mako/config" = "~/.config/mako/config"
 
+[nvim.files]
+"dotfiles/nvim" = "~/.config/nvim"
+
 [colors]
